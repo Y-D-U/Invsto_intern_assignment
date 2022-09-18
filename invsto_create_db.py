@@ -2,8 +2,6 @@ import mysql.connector
 import pandas as pd
 import numpy
 
-
-
 with open("det.txt") as f:
 	paswd=[i.strip() for i in f.readlines()][0]
 
