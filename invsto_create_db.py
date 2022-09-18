@@ -17,9 +17,6 @@ cur=db.cursor(buffered=True)
 
 data=pd.read_excel(r"C:\Users\HP\Downloads\HINDALCO_1D.xlsx")
 
-
-
-
 cur.execute("CREATE TABLE HINDALCO(Date datetime,close FLOAT,high FLOAT ,low FLOAT,open FLOAT,volume INT, instrument varchar(20));")
 
 for i,rows in data.iterrows():
